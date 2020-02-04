@@ -18,7 +18,6 @@ def removeDuplicates(x):
     '''
     return list(dict.fromkeys(x))
 
-
 def DeleteByIndices(lst, indices):
 
     indices_as_set = set(indices)
@@ -26,7 +25,7 @@ def DeleteByIndices(lst, indices):
 
 def GenerateAdjecentShapesPoints(NrObjects = 10, var = 'False', OverlapRemove = 'False'):
 
-    seed(0)
+    # seed(0)
     Aggrpoints = []
     centers = []
     ShapeNrVertices = []
@@ -58,7 +57,7 @@ def GenerateAdjecentShapesPoints(NrObjects = 10, var = 'False', OverlapRemove = 
         NrVertices = random.randint(3,8)  # shape 2 vertices
         ShapeNrVertices.append(NrVertices)
         if var == 'True':
-            offset = random.randint(1,10)
+            offset = random.randint(4,20)
             #print('offset', offset)
         else:
             offset = 0

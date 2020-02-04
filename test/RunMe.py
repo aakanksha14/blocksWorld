@@ -10,7 +10,7 @@ from SaveData import Save
 
 if __name__ == "__main__":
     # The main program parameters
-    NumberOfImages = 10                              # the number of images you want [0-100000]
+    NumberOfImages = 20                              # the number of images you want [0-100000]
     NrObjects = random.randint(3,8)                        # the number of objects in each image [1-10]
     var = 'True'                                    # is there gap between objects or not.
     OverlapRemove = 'True'
